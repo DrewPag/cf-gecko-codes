@@ -1,7 +1,7 @@
 # cf-gecko-codes
 Some gecko codes for Animal Crossing: City Folk
 
-**CF Gecko Codes.txt** contains all the gecko codes with short explanations + some comments
+**cf_gecko_codes.txt** contains all the gecko codes with short explanations + some comments
 
 RUUJ01 = Japanese region; RUUE01 = USA region
 

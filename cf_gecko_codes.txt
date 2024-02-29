@@ -2,7 +2,8 @@ CF Gecko Codes
 
 Japan (RUUJ01)
 
-100% Tarantula/Scorpion - July 9PM
+100% Tarantula/Scorpion - July 11PM-4AM
+- all spawns are Tarantula (50%) or Scorpion (50%)
 064eca34 00000008
 003e01f4 003f03e8
 
@@ -18,7 +19,9 @@ Japan (RUUJ01)
 064e5980 00000003
 3a066400 00000000
 
-Randomizer (April)
+Bug Randomizer
+- For all months and all times of day, every bug in the spawn data (i.e. all but Ant and Fly) is available with equal chance (about 1.6%)
+- Spawn conditions (ex. rain for snail) still apply
 
 # All top-level bug pointers point to APR pointer
 064ed4b0 00000030
@@ -70,7 +73,7 @@ Randomizer (April)
 003c03b0 003d03c0
 003e03d0 003f03e0
 
-USA (RUUE01)
+USA (RUUE01) - TODO
 
 USA main.dol
 - 4e40fc in USA main.dol = 4e8f2c in JP main.dol
