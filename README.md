@@ -21,3 +21,5 @@ Bug Randomizer Notes
 [RUUJ01.txt](RUUJ01.txt) - txt file with (most) JPN region codes in a format compatible with some loaders (?)
 
 [RUUJ01.gct](RUUJ01.gct) - .gct file containing the original gecko codes. Does not include the randomizer 2.0
+
+You can convert .txt file codes to .gct by using the [Gecko Code Manager](https://www.zeldacodes.org/downloads/code-manager)
