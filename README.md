@@ -1,6 +1,8 @@
 # cf-gecko-codes
 Some gecko codes for Animal Crossing: City Folk
 
+NOTE: Any behavior or spawn condition codes, including the updated Bug Randomizer, only work on Dolphin or by using Gecko to apply the codes on a Wii/Wii U. These codes will not work when launching the game from a homebrew application using a cIOS.
+
 [cf_gecko_codes.txt](cf_gecko_codes.txt) contains all the gecko codes with short explanations + some comments
 
 [bug_randomizer_2.0_codes](bug_randomizer_2.0_codes) contains pre-generated codes & mappings for the updated randomizer (randomized bug spawn conditions + behaviors). 100 each for USA and JPN
