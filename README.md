@@ -10,7 +10,7 @@ Bug Randomizer Notes
 - Some spawn conditions (Flea, Ant, and Fly) are broken when applied to other bugs, so they are not in the pool.
 - Some behaviors (Flea, Ant, and Bee) are broken, so they are not in the pool.
 - There is "vanilla prevention" to ensure no other bug rolls the exact same spawn condition and behavior. However, bugs may roll another spawn condition/behvaior that is essentially the same (ex. Fruit Beetle rolling another tree spawn condition/behavior)
-- The weather restrictions for all bugs still apply. Snail will still only spawn while it is raining. And any bugs that couldn't spawn in the rain before still can't spawn in the rain
+- The weather restrictions for all bugs still apply. Snail will only spawn while it is raining. And any bugs that couldn't spawn in the rain before still can't spawn in the rain
 - Spawn condition restrictions still apply in some cases:
   - Hybrid flower - if the peacock rolls another "spawns flying from flowers" spawn condition (most other butterflies), then it will still only spawn from a blue/blakc/purple hybrid flower
   - Red flower - same as above, but for Tiger Butterfly
