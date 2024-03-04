@@ -3,7 +3,7 @@ Some gecko codes for Animal Crossing: City Folk
 
 [cf_gecko_codes.txt](cf_gecko_codes.txt) contains all the gecko codes with short explanations + some comments
 
-[**Bug Randomizer 2.0 Codes**] contains pre-generated codes for the updated randomizer (randomized bug spawn conditions + behaviors). 100 each for USA and JPN
+[bug_randomizer_2.0_codes](bug_randomizer_2.0_codes) contains pre-generated codes for the updated randomizer (randomized bug spawn conditions + behaviors). 100 each for USA and JPN
 
 RUUJ01 = Japanese region; RUUE01 = USA region
 
