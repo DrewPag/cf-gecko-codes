@@ -8,9 +8,9 @@ NOTE: Any behavior or spawn condition codes, including the updated Bug Randomize
 [bug_randomizer_2.0_codes](bug_randomizer_2.0_codes) contains pre-generated codes & mappings for the updated randomizer (randomized bug spawn conditions + behaviors). 100 each for USA and JPN
 
 Bug Randomizer Notes
-- Flea and Ant are completely broken, so they are both always completely vanilla
-- Some spawn conditions (Flea, Ant, and Fly) are broken when applied to other bugs, so they are not in the pool.
-- Some behaviors (Flea, Ant, and Bee) are broken, so they are not in the pool.
+- Bee, Ant, and Flea are completely broken, so they are always vanilla. Their behaviors and spawn conditions will not be applied to other bugs.
+- The spawn condition for Fly (spawning near spoiled tunrips/candy) is broken when applied to other bugs, so it is not in the pool.
+  - However, Fly can spawn under other conditions (i.e. it does not have to be vanilla). As a result, there will be one extra bug spawning from one of the non-broken spawn conditions (i.e. not flea, or from tunrips/candy, or from a beehive) compared to the vanilla game.
 - There is "vanilla prevention" to ensure no other bug rolls the exact same spawn condition and behavior. However, bugs may roll another spawn condition/behvaior that is essentially the same (ex. Fruit Beetle rolling another tree spawn condition/behavior)
 - The weather restrictions for all bugs still apply. Snail will only spawn while it is raining. And any bugs that couldn't spawn in the rain before still can't spawn in the rain
 - Spawn condition restrictions still apply in some cases:
