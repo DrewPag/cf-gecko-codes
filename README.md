@@ -17,6 +17,8 @@ Bug Randomizer Notes
   - Hybrid flower - if the peacock rolls another "spawns flying from flowers" spawn condition (most other butterflies), then it will still only spawn from a blue/blakc/purple hybrid flower
   - Red flower - same as above, but for Tiger Butterfly
   - White flower - if the orchid mantis rolls another "spawns on flowers" spawn condition (Mantis, ladybug, snail), then it will still only spawn on a white flower
+- [Bugs that spawn in the tree don't drop down](https://clips.twitch.tv/ArborealRealGiraffeTheRinger-2-74Hmog-ATpoAi5) - they sort of just stay in place. If it's a small bug, it will be very hard to see...
+  - [...but, you can use the camera to see if there is a bug there after shaking the tree](https://clips.twitch.tv/EncouragingAuspiciousFerretMau5-9QcgMd3JG4CrDFeO)
 
 [RUUE01.txt](RUUE01.txt) - txt file with USA region codes in a format compatible with some loaders (?)
 
