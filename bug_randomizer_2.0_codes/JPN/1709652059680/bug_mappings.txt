@@ -1,0 +1,84 @@
+  Common Butterfly	->	Tarantula
+  Yellow Butterfly	->	Common Butterfly
+   Tiger Butterfly	->	Spider
+ Peacock Butterfly	->	Cricket
+ Monarch Butterfly	->	Jewel Beetle
+ Emperor Butterfly	->	Walker Cicada
+  Agrias Butterfly	->	Giant Stag
+       Raja Brooke	->	Pill Bug
+          Birdwing	->	Dung Beetle
+              Moth	->	Longhorn Beetle
+     Oak Silk Moth	->	Centipede
+          Honeybee	->	Darner Dragonfly
+               Bee	->	Bee
+       Long Locust	->	Bell Cricket
+  Migratory Locust	->	Honeybee
+            Mantis	->	Scarab Beetle
+     Orchid Mantis	->	Long Locust
+      Brown Cicada	->	Miyama Stag
+     Robust Cicada	->	Mole Cricket
+     Walker Cicada	->	Monarch Butterfly
+    Evening Cicada	->	Tiger Butterfly
+       Lantern Fly	->	Ladybug
+     Red Dragonfly	->	Firefly
+  Darner Dragonfly	->	Dynastid Beetle
+  Banded Dragonfly	->	Cyclommatus
+   Giant Petaltail	->	Emperor Butterfly
+               Ant	->	Ant
+        Pondskater	->	Grasshopper
+     Diving Beetle	->	Mantis
+             Snail	->	Banded Dragonfly
+           Cricket	->	Walking Leaf
+      Bell Cricket	->	Giant Petaltail
+       Grasshopper	->	Lantern Fly
+      Mole Cricket	->	Moth
+      Walking Leaf	->	Birdwing
+      Walkingstick	->	Robust Cicada
+           Bagworm	->	Raja Brooke
+           Ladybug	->	Peacock Butterfly
+     Violin Beetle	->	Pondskater
+   Longhorn Beetle	->	Scorpion
+       Dung Beetle	->	Fruit Beetle
+           Firefly	->	Oak Silk Moth
+      Fruit Beetle	->	Orchid Mantis
+     Scarab Beetle	->	Goliath Beetle
+      Jewel Beetle	->	Long Locust
+       Miyama Stag	->	Violin Beetle
+          Saw Stag	->	Brown Cicada
+        Giant Stag	->	Saw Stag
+      Rainbow Stag	->	Yellow Butterfly
+       Cyclommatus	->	Elephant Beetle
+       Golden Stag	->	Migratory Locust
+   Dynastid Beetle	->	Evening Cicada
+      Atlas Beetle	->	Red Dragonfly
+   Elephant Beetle	->	Mosquito
+   Hercules Beetle	->	Snail
+    Goliath Beetle	->	Rainbow Stag
+              Flea	->	Flea
+          Pill Bug	->	Bagworm
+          Mosquito	->	Atlas Beetle
+               Fly	->	Golden Stag
+         Centipede	->	Hercules Beetle
+            Spider	->	Walkingstick
+         Tarantula	->	Agrias Butterfly
+          Scorpion	->	Diving Beetle
+
+
+Spawn Condition Totals:		Generated	Vanilla
+
+Flying anywhere         	5		5
+Flying from a flower    	9		9
+On a flower             	4		4
+Hopping on ground       	6		5
+In or on or above water 	4		4
+On turnip/candy         	1		1
+Flying above turnip/trash	0		1
+Walking on ground       	4		4
+In a rock               	2		2
+Flying near light source	1		1
+On a stump              	2		2
+On a snowball           	1		1
+In a tree               	2		2
+On a coconut tree       	6		6
+On a tree               	16		16
+On a villager           	1		1
