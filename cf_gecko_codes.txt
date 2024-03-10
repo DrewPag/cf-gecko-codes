@@ -351,6 +351,43 @@ All bugs behave like Spider
 80F03FD8 80F03FD8
 E0000000 80008000
 
+All bugs (EXCEPT BEE) behave like Spider
+20ed9880 00000074
+06F04030 00000100
+80F03FD8 80F03FD8
+80F03FD8 80F03FD8
+80F03FD8 80F03FD8
+80F03FD8 80F03FD8
+80F03FD8 80F03FD8
+80F03FD8 80F03FD8
+80F03A7C 80F03FD8
+80F03FD8 80F03FD8
+80F03FD8 80F03FD8
+80F03FD8 80F03FD8
+80F03FD8 80F03FD8
+80F03FD8 80F03FD8
+80F03FD8 80F03FD8
+80F03FD8 80F03FD8
+80F03FD8 80F03FD8
+80F03FD8 80F03FD8
+80F03FD8 80F03FD8
+80F03FD8 80F03FD8
+80F03FD8 80F03FD8
+80F03FD8 80F03FD8
+80F03FD8 80F03FD8
+80F03FD8 80F03FD8
+80F03FD8 80F03FD8
+80F03FD8 80F03FD8
+80F03FD8 80F03FD8
+80F03FD8 80F03FD8
+80F03FD8 80F03FD8
+80F03FD8 80F03FD8
+80F03FD8 80F03FD8
+80F03FD8 80F03FD8
+80F03FD8 80F03FD8
+80F03FD8 80F03FD8
+E0000000 80008000
+
 All bugs behave like Dung Beetle
 20ed9880 00000074
 06F04030 00000100
@@ -632,3 +669,75 @@ All Bugs (excluding Ant) in spawn data all year all day with equal probability (
 003d0393 003e03a2
 003f03b1 00000000
 E0000000 80008000
+
+Hybrids (main.dol)
+
+- In hybrid function:
+  
+  c0 02 89 30 = lfs f0,-0x76d0(r2)=>FLOAT_100.0
+  c0 22 89 40 = lfs f1,-0x76c0(r2)=>FLOAT_0.0
+
+    - first, the % value is loaded into f0, and f1 (if two) possibilities, and f2 (if three possibilities) and then stored
+    - lfs INTO f0 FROM address 
+  
+  f0: d0 03 00 08 = stfs f0,0x8(r3)=>DAT_8058ec04
+  f1: d0 23 00 14 = stfs f1,0x14(r3)=>DAT_8058ebc0
+
+    - then, this value is stored from f0 (and f1 and f2 as needed) into the [pointer region that is passed to the function???] before calling the function?
+    - stfs FROM f0 INTO address
+
+- for any pair that is NOT 50/50, it will be easiest to just load 0.0 in f1 and 100.0 in f0 - f0 always seems to be the hybrid chance. With three possibilites and 2 dupes (ex. 35, 35. 30), 35 is in f1 and loaded twice, 30 is in f0 and loaded once
+ - actually, the data region that is passed to the function is always 0'ed before the actual % is loaded into it... so you can just nop the line that sets f1/f2, and just set f0 to 100
+
+# If a pair of normal flowers is chosen to breed, it will always produce a hybrid (if possible)
+# Any flower pairs including a hybrid (Normal x Hybrid or Hybrid x Hybrid) are unchanged 
+Normal flower pairs only produce hybrids
+# Red x Red Tulips
+040a0014 c0028930
+040a0038 60000000
+# Red x White Tulips
+040a006c c0028930
+040a0088 60000000
+040a008c 60000000
+# Red x Yellow Tulips
+040a00c0 c0028930
+040a00dc 60000000
+040a00e0 60000000
+# Yellow x Yellow Tulips
+040a0370 c0028930
+040a038c 60000000
+# White x White Pansies
+040a0660 c0028930
+040a0684 60000000
+# Yellow x Red Pansies
+040a087c c0028930
+040a0898 60000000
+040a089c 60000000
+# Red x Red Pansies
+040a09b4 c0028930
+040a09d0 60000000
+# White x Red Cosmos
+040a0cf4 c0028930
+040a0d10 60000000
+040a0d14 60000000
+# Red x Red Cosmos
+040a0e7c c0028930
+040a0e98 60000000
+# Red x Yellow Cosmos
+040a0ecc c0028930
+040a0ee8 60000000
+040a0eec 60000000
+# Red x Red Roses
+040a1300 c0028930
+040a132c 60000000
+# Red x White Roses
+040a1360 c0028930
+040a1384 60000000
+040a1388 60000000
+# Red x Yellow Roses
+040a13bc c0028930
+040a13e0 60000000
+040a13e4 60000000
+# Red x White Carnations
+040a1f98 c0028930
+040a1fb4 60000000

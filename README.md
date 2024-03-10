@@ -5,6 +5,8 @@ NOTE: Any behavior or spawn condition codes, including the updated Bug Randomize
 
 [cf_gecko_codes.txt](cf_gecko_codes.txt) contains all the gecko codes with short explanations + some comments
 
+[bug_randomizer_2.0_codes_no_spider_bagworm](bug_randomizer_2.0_codes_no_spider_bagworm) contains pre-generated codes that DO NOT include spider/bagworm spawn conditions + behaviors. These behaviors may cause crashes under certain conditions... so for now, I generated these codes without those behaviors. However, spider and bagworm will still have randomized behaviors - so in total these codes have 3 additional random spawn conditions, compared to vanilla.
+
 [bug_randomizer_2.0_codes](bug_randomizer_2.0_codes) contains pre-generated codes & mappings for the updated randomizer (randomized bug spawn conditions + behaviors). 100 each for USA and JPN
 
 Bug Randomizer Notes
