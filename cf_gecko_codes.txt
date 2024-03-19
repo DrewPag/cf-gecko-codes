@@ -52,9 +52,17 @@ Japan (RUUJ01)
 064ec578 00000008
 003803e8 00000000
 
+100% Pondskater - January 8AM-4PM
+064ec578 00000008
+001b03e8 00000000
+
 50% Oak Silk Moth, 50% Lantern Fly  - June 11PM-4AM
 064ec8b8 00000008
 000a01f4 001503e8
+
+50% Giant Beetle, 50% Hercules Beetle  - June 11PM-4AM
+064ec8b8 00000008
+002f01f4 003603e8
 
 50% Ant, 50% Fly test - January 11PM-4AM
 064ec558 00000008
@@ -99,6 +107,13 @@ All Bugs spawn on normal trees
 20ed9880 00000074
 06EDE82C 0000000c
 38a0000f 7ca32b78
+4e800020 00000000
+E0000000 80008000
+
+All Bugs spawn on coconut trees
+20ed9880 00000074
+06EDE82C 0000000c
+38a0000e 7ca32b78
 4e800020 00000000
 E0000000 80008000
 
@@ -567,6 +582,201 @@ All Bugs (excluding ant) in spawn data all year + all times of day, with equal p
 003f03b1 00000000
 E0000000 80008000
 
+All fish behave like 
+20f0f560 00000071
+06F04030 00000100
+80F03D8C 80F03D8C
+80F03D8C 80F03D8C
+80F03D8C 80F03D8C
+80F03D8C 80F03D8C
+80F03D8C 80F03D8C
+80F03D8C 80F03D8C
+80F03D8C 80F03D8C
+80F03D8C 80F03D8C
+80F03D8C 80F03D8C
+80F03D8C 80F03D8C
+80F03D8C 80F03D8C
+80F03D8C 80F03D8C
+80F03D8C 80F03D8C
+80F03D8C 80F03D8C
+80F03D8C 80F03D8C
+80F03D8C 80F03D8C
+80F03D8C 80F03D8C
+80F03D8C 80F03D8C
+80F03D8C 80F03D8C
+80F03D8C 80F03D8C
+80F03D8C 80F03D8C
+80F03D8C 80F03D8C
+80F03D8C 80F03D8C
+80F03D8C 80F03D8C
+80F03D8C 80F03D8C
+80F03D8C 80F03D8C
+80F03D8C 80F03D8C
+80F03D8C 80F03D8C
+80F03D8C 80F03D8C
+80F03D8C 80F03D8C
+80F03D8C 80F03D8C
+80F03D8C 80F03D8C
+E0000000 80008000
+
+All Fish Spawn in River & Ocean All Year/All Day with equal chance (1/64 = 1.5625%)
+064e61e0 00000038
+804e5ed0 804e5ed0
+804e5ed0 804e5ed0
+804e5ed0 804e5ed0
+804e5ed0 804e5ed0
+804e5ed0 804e5ed0
+804e5ed0 804e5ed0
+804e5ed0 804e5ed0
+064e5ed0 0000000c
+804e5ea0 804e5ea0
+804e5ea0 00000000
+064e5ea0 00000010
+804e4d14 00000040
+804e5630 00000040
+064e4d14 000000c4
+00000101 00020200
+03030004 04000505
+00060600 07070008
+08000909 000A0A00
+0B0B000C 0C000D0D
+000E0E00 0F0F0010
+10001111 00121200
+13130014 14001515
+00161600 17170018
+18001919 001A1A00
+1B1B001C 1C001D1D
+001E1E00 1F1F0020
+20002121 00222200
+23230024 24002525
+00262600 27270028
+28002929 002A2A00
+2B2B002C 2C002D2D
+002E2E00 2F2F0030
+30003131 00323200
+33330034 34003535
+00363600 37370038
+38003939 003A3A00
+3B3B003C 3C003D3D
+003E3E00 3F3F0040
+00000000 00000000
+064e5630 000000c4
+00060101 06020206
+03030604 04060505
+06060606 07070608
+08060909 060A0A06
+0B0B060C 0C060D0D
+060E0E06 0F0F0610
+10061111 06121206
+13130614 14061515
+06161606 17170618
+18061919 061A1A06
+1B1B061C 1C061D1D
+061E1E06 1F1F0620
+20062121 06222206
+23230624 24062525
+06262606 27270628
+28062929 062A2A06
+2B2B062C 2C062D2D
+062E2E06 2F2F0630
+30063131 06323206
+33330634 34063535
+06363606 37370638
+38063939 063A3A06
+3B3B063C 3C063D3D
+063E3E06 3F3F0640
+00000000 00000000
+E0000000 80008000
+
+Bug/Fish swapping (doesn't work...)
+2f 46 69 73 68 2f 25 73 2e 62 72 72 65 73 00 = "/Fish/%s.brres" @ 8027483c (Ghidra), 4FEA60 in Dolphin dump??
+2f 49 6e 73 65 63 74 2f 25 73 2e 62 72 72 65 73 00 = "/Insect/%s.brres" @ 802a6c2c (Ghidra) + c5cca4 = 80F038D0; confirmed in Dolphin dump
+
+Replace /Insect/%s.brres with /Fish/%s.brres
+20ed9880 00000074
+06F038D0 00000010
+2f466973 682f2573
+2e627272 65730000
+E0000000 80008000
+
+Replace ins_abura with fsh_blue
+20ed9880 00000074
+06F019BC 0000000c
+6673685f 626c7565
+00000000 00000000
+E0000000 80008000
+
+Hybrids (main.dol)
+
+- In hybrid function:
+  
+  c0 02 89 30 = lfs f0,-0x76d0(r2)=>FLOAT_100.0
+  c0 22 89 40 = lfs f1,-0x76c0(r2)=>FLOAT_0.0
+
+    - first, the % value is loaded into f0, and f1 (if two) possibilities, and f2 (if three possibilities) and then stored
+    - lfs INTO f0 FROM address 
+  
+  f0: d0 03 00 08 = stfs f0,0x8(r3)=>DAT_8058ec04
+  f1: d0 23 00 14 = stfs f1,0x14(r3)=>DAT_8058ebc0
+
+    - then, this value is stored from f0 (and f1 and f2 as needed) into the [pointer region that is passed to the function???] before calling the function?
+    - stfs FROM f0 INTO address
+
+- for any pair that is NOT 50/50, it will be easiest to just load 0.0 in f1 and 100.0 in f0 - f0 always seems to be the hybrid chance. With three possibilites and 2 dupes (ex. 35, 35. 30), 35 is in f1 and loaded twice, 30 is in f0 and loaded once
+ - actually, the data region that is passed to the function is always 0'ed before the actual % is loaded into it... so you can just nop the line that sets f1/f2, and just set f0 to 100
+
+# If a pair of normal flowers is chosen to breed, it will always produce a hybrid (if possible)
+# Any flower pairs including a hybrid (Normal x Hybrid or Hybrid x Hybrid) are unchanged 
+Normal flower pairs only produce hybrids
+# Red x Red Tulips
+040a0014 c0028930
+040a0038 60000000
+# Red x White Tulips
+040a006c c0028930
+040a0088 60000000
+040a008c 60000000
+# Red x Yellow Tulips
+040a00c0 c0028930
+040a00dc 60000000
+040a00e0 60000000
+# Yellow x Yellow Tulips
+040a0370 c0028930
+040a038c 60000000
+# White x White Pansies
+040a0660 c0028930
+040a0684 60000000
+# Yellow x Red Pansies
+040a087c c0028930
+040a0898 60000000
+040a089c 60000000
+# Red x Red Pansies
+040a09b4 c0028930
+040a09d0 60000000
+# White x Red Cosmos
+040a0cf4 c0028930
+040a0d10 60000000
+040a0d14 60000000
+# Red x Red Cosmos
+040a0e7c c0028930
+040a0e98 60000000
+# Red x Yellow Cosmos
+040a0ecc c0028930
+040a0ee8 60000000
+040a0eec 60000000
+# Red x Red Roses
+040a1300 c0028930
+040a132c 60000000
+# Red x White Roses
+040a1360 c0028930
+040a1384 60000000
+040a1388 60000000
+# Red x Yellow Roses
+040a13bc c0028930
+040a13e0 60000000
+040a13e4 60000000
+# Red x White Carnations
+040a1f98 c0028930
+040a1fb4 60000000
 
 USA (RUUE01)
 
@@ -669,75 +879,3 @@ All Bugs (excluding Ant) in spawn data all year all day with equal probability (
 003d0393 003e03a2
 003f03b1 00000000
 E0000000 80008000
-
-Hybrids (main.dol)
-
-- In hybrid function:
-  
-  c0 02 89 30 = lfs f0,-0x76d0(r2)=>FLOAT_100.0
-  c0 22 89 40 = lfs f1,-0x76c0(r2)=>FLOAT_0.0
-
-    - first, the % value is loaded into f0, and f1 (if two) possibilities, and f2 (if three possibilities) and then stored
-    - lfs INTO f0 FROM address 
-  
-  f0: d0 03 00 08 = stfs f0,0x8(r3)=>DAT_8058ec04
-  f1: d0 23 00 14 = stfs f1,0x14(r3)=>DAT_8058ebc0
-
-    - then, this value is stored from f0 (and f1 and f2 as needed) into the [pointer region that is passed to the function???] before calling the function?
-    - stfs FROM f0 INTO address
-
-- for any pair that is NOT 50/50, it will be easiest to just load 0.0 in f1 and 100.0 in f0 - f0 always seems to be the hybrid chance. With three possibilites and 2 dupes (ex. 35, 35. 30), 35 is in f1 and loaded twice, 30 is in f0 and loaded once
- - actually, the data region that is passed to the function is always 0'ed before the actual % is loaded into it... so you can just nop the line that sets f1/f2, and just set f0 to 100
-
-# If a pair of normal flowers is chosen to breed, it will always produce a hybrid (if possible)
-# Any flower pairs including a hybrid (Normal x Hybrid or Hybrid x Hybrid) are unchanged 
-Normal flower pairs only produce hybrids
-# Red x Red Tulips
-040a0014 c0028930
-040a0038 60000000
-# Red x White Tulips
-040a006c c0028930
-040a0088 60000000
-040a008c 60000000
-# Red x Yellow Tulips
-040a00c0 c0028930
-040a00dc 60000000
-040a00e0 60000000
-# Yellow x Yellow Tulips
-040a0370 c0028930
-040a038c 60000000
-# White x White Pansies
-040a0660 c0028930
-040a0684 60000000
-# Yellow x Red Pansies
-040a087c c0028930
-040a0898 60000000
-040a089c 60000000
-# Red x Red Pansies
-040a09b4 c0028930
-040a09d0 60000000
-# White x Red Cosmos
-040a0cf4 c0028930
-040a0d10 60000000
-040a0d14 60000000
-# Red x Red Cosmos
-040a0e7c c0028930
-040a0e98 60000000
-# Red x Yellow Cosmos
-040a0ecc c0028930
-040a0ee8 60000000
-040a0eec 60000000
-# Red x Red Roses
-040a1300 c0028930
-040a132c 60000000
-# Red x White Roses
-040a1360 c0028930
-040a1384 60000000
-040a1388 60000000
-# Red x Yellow Roses
-040a13bc c0028930
-040a13e0 60000000
-040a13e4 60000000
-# Red x White Carnations
-040a1f98 c0028930
-040a1fb4 60000000
