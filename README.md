@@ -22,7 +22,7 @@ Bug Randomizer Notes
 - [Bugs that spawn in the tree don't drop down](https://clips.twitch.tv/ArborealRealGiraffeTheRinger-2-74Hmog-ATpoAi5) - they sort of just stay in place. If it's a small bug, it will be very hard to see...
   - [...but, you can use the camera to see if there is a bug there after shaking the tree](https://clips.twitch.tv/EncouragingAuspiciousFerretMau5-9QcgMd3JG4CrDFeO)
 
-  [fish_randomizer_v1.txt](fish_randomizer_v1.txt) contains v1 of the fish randomizer code. All fish spawn all year and all day, in both the river and the ocean (no ponds) with equal chance (1/64 = 1.5625%)
+[fish_randomizer_v1.txt](fish_randomizer_v1.txt) contains v1 of the fish randomizer code. All fish spawn all year and all day, in both the river and the ocean (no ponds) with equal chance (1/64 = 1.5625%)
 
 [RUUE01.txt](RUUE01.txt) - txt file with USA region codes in a format compatible with some loaders (?)
 
