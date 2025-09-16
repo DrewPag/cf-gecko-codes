@@ -22,8 +22,42 @@ Notes
 - Snail
   - ONLY spawns when it is raining, regardless of spawn condition + behavior... the game seems to have an additional check somewhere, to only produce the snail if the weather is rain
 
-Wii Controller hooks - seems to be 24 addresses, including: 806e4200, 806e4260, 807ed93e, etc.
+Wii Controller hooks - seems to be 24 addresses, including: 806e4200, 806e4260, 806e6940 (?), 807ed93e, etc.
 - Button values here: http://usbgecko.wikidot.com/making-button-activators
+
+Movement (RUUJ01)
+
+speed: 80e67D14 (2 bytes)
+running speed = 0xABE = 2750 (0xABD if you are running exactly Left/right or up/down lol)
+walking speed = 0x359 = 857 (0x358 if you are running exactly Left/right or up/down lol)
+
+Dolphin code @ 80e758f0 and 80e7599c (Ghidra 801d4134 and 801d41e0) ((offset = ghidra + CA17BC)) seem to alternate writing to this speed address
+- 801d4134 - 0's the value?
+- then, determine speed value based on buttons pressed?
+- 80e7599c - writes the speed value to ram?
+
+80e67f48 - player X position (4 bytes) - top left is origin - (0x10, 0x10) = (16,16) - there are acres above and to the left for wall etc.
+80e67f48 - player Y position (4 bytes)
+
+80E67EE7 (1 byte), 80E67EE6 (2 bytes) - type of movement player is currently doing
+  0 = not moving
+  1 = barely moving
+  2 = normal Walking
+  3 = running
+
+80e67fc2 - 1 if walking or running, 0 otherwise
+80e67fc3 - 1 if running, 0 otherwise
+
+Sprint faster (from random JP website)
+C2E9EC84 00000003 
+3D6040A0 9163000C 
+3d6b00a0 9163001c 
+C3A30008 00000000 
+
+(does nothing)Always load high speed value into speed ram?
+04E75998 38600FFF
+
+Note: offset for this REL(?) is USA 801f8f50, Japan 801f8f48 = JPN + 8
 
 Japan (RUUJ01)
 
@@ -50,6 +84,14 @@ Japan (RUUJ01)
 
 100% Flea - January 8AM-4PM
 064ec578 00000008
+003803e8 00000000
+
+100% Flea - October 5PM-7PM
+064ed0f0 00000008
+003803e8 00000000
+
+100% Flea - October 7PM-11PM
+064ed120 00000008
 003803e8 00000000
 
 100% Pondskater - January 8AM-4PM
